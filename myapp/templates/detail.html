@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="{% url 'renew' blog_detail.id %}">수정</a> |
+    <a href="{% url 'remove' blog_detail.id %}">삭제</a> <br>
+    {{ blog_detail.title }} <br>
+    {{ blog_detail.pub_date }} <br>
+    {{ blog_detail.body }} <br>
+    <a href="{% url 'google_move' %}">구글로 이동</a>
+</body>
+</html>

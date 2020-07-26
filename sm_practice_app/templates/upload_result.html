@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block contents %}
+{% for item in profile %}
+<h1>{{item.title}}</h1>
+<img src="{{ item.image.url }}" alt="">
+<br><br>
+{% endfor %}
+{% endblock %}
+
